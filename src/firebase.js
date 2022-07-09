@@ -20,3 +20,8 @@ const db = firebaseApp.firestor();
 const auth = firebaseApp.auth();
 // get the Google Authentication service provider
 const provider = auth.GoogleAuthProvider();
+
+//e export auth and provider component explicitly
+export { auth, provider };
+// export db component by default
+export default db;
