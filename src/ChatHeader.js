@@ -12,6 +12,8 @@ import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 // import help icon from material ui
 import HelpRoundedIcon from '@mui/icons-material/HelpRounded';
+// import send icon from material ui
+import SendRoundedIcon from '@mui/icons-material/SendRounded';
 
 // ChatHeader function
 function ChatHeader() {
@@ -32,6 +34,7 @@ function ChatHeader() {
           <input placeholder="search" />
           <SearchRoundedIcon />
         </div>
+        <SendRoundedIcon />
         <HelpRoundedIcon />
       </div>
     </div>
