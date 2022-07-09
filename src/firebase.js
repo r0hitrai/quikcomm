@@ -14,5 +14,7 @@ const firebaseConfig = {
 
 // initialize the app using the above configurtion
 const firebaseApp = firebase.initializeApp(firebaseConfig);
-// get the database
+// get the database object
 const db = firebaseApp.firestor();
+// get the authentication object
+const auth = firebaseApp.auth();
