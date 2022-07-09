@@ -14,17 +14,18 @@ export const appSlice = createSlice({
   },
   // reducer object containing functions
   reducers: {
-    // function to set channel ID
-    setChannelId: (state, action) => {
-      state.app += action.payload;
+    // function to set channel info
+    setChannelInfo: (state, action) => {
+      state.channelId = action.payload.channelId;
+      state.channelName = action.payload.channelName;
     },
   },
 });
 
-// export set channel Id action
-export const { setChannelId } = appSlice.actions;
+// export set channel info action
+export const { setChannelInfo } = appSlice.actions;
 
-// export channel ID and channel name selecter
+// export channel Id and channel name selecter
 export const selectChannelId = (state) => state.app.channelId;
 export const selectChannelName = (state) => state.app.channelName;
 
