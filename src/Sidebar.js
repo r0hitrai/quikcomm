@@ -59,7 +59,7 @@ function Sidebar() {
             </div>
           </div>
           <div className="sidebar__profile">
-            <Avatar />
+            <Avatar src="https://raw.githubusercontent.com/r0hitrai/Images/main/coder1.png"/>
             <div className="sidebar__profileInfo">
               <h3>Username</h3>
               <p>#thisIsMyId</p>
