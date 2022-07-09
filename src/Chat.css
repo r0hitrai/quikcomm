@@ -26,3 +26,7 @@
   color: white;
   font-size: large;
 }
+
+.chat__input > form {
+  flex: 1;
+}
