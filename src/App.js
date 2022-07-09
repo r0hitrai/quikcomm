@@ -20,7 +20,7 @@ function App() {
   const dispatch = useDispatch();
   // logged in user
   const user = useSelector(selectUser);
-  // run on every render and update
+  // run when dispatch dependency is used
   useEffect(() => {
     // on use of authentication
     auth.onAuthStateChanged((authUser) => {
