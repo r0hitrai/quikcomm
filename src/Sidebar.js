@@ -54,6 +54,10 @@ function Sidebar() {
           </div>
           <div className="sidebar__profile">
             <Avatar />
+            <div className="sidebar__profileInfo">
+              <h3>Username</h3>
+              <p>#thisIsMyId</p>
+            </div>
           </div>
         </div>
     );
