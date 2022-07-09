@@ -26,6 +26,8 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import { useSelector } from 'react-redux';
 // import select user component from user slice
 import { selectUser } from './features/userSlice';
+// import auth component from firebase.js
+import { auth } from './firebase';
 
 // Sidebar function
 function Sidebar() {
@@ -65,7 +67,7 @@ function Sidebar() {
         </div>
       </div>
       <div className="sidebar__profile">
-        <Avatar src={user.photo} alt="profile"/>
+        <Avatar onClick={() => auth.signOut()} src={user.photo} alt="profile"/>
         <div className="sidebar__profileInfo">
           <h3>{user.displayName}</h3>
           <p>#{user.uid.substring(0, 5)}</p>
