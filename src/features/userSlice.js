@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 // export user slice component
 export const userSlice = createSlice({
   // slice name
-  nam: "user",
+  name: "user",
   // initial state for reducer
   initialState: {
     // user variable to null
