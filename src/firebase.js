@@ -1,5 +1,9 @@
-// import firebase component from firebase
-import firebase from 'firebase';
+// import app initializer component from firebase app
+import { initializeApp } from 'frebase/app';
+// import firestore database component from firebase firestore
+import { getFirestore } from 'firebase/firestore';
+// import auth, sign in with popup and google auth provider from firebase auth
+import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
@@ -13,15 +17,15 @@ const firebaseConfig = {
 };
 
 // initialize the app using the above configurtion
-const firebaseApp = firebase.initializeApp(firebaseConfig);
+const firebaseApp = initializeApp(firebaseConfig);
 // get the database object
-const db = firebaseApp.firestor();
+const db = getFirestore();
 // get the authentication object
-const auth = firebaseApp.auth();
+const auth = getAuth();
 // get the Google Authentication service provider
-const provider = auth.GoogleAuthProvider();
+const provider = GoogleAuthProvider();
 
-//e export auth and provider component explicitly
-export { auth, provider };
+//e export auth, sign in with popup and provider component explicitly
+export { auth, signInWithPopup, provider };
 // export db component by default
 export default db;
