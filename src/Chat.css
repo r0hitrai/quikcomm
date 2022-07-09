@@ -35,3 +35,7 @@
 .chat__inputButton {
   display: none;
 }
+
+.chat__inputIcons > .MuiSvgIcon-root {
+  padding: 5px;
+}
