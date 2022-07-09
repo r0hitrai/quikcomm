@@ -8,7 +8,7 @@ function ChatHeader() {
   // return HTML code
   return (
     <div className="chatHeader">
-      i am the header
+      
     </div>
   );
 }
