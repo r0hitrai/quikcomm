@@ -1,5 +1,5 @@
-// import React component from react library
-import React from 'react';
+// import React, use state component from react library
+import React,{ useState} from 'react';
 // import Sidebar.css from current folder
 import './Sidebar.css';
 // import expand more icon from material ui
@@ -22,8 +22,8 @@ import MicIcon from '@mui/icons-material/Mic';
 import HeadsetIcon from '@mui/icons-material/Headset';
 // import settings icon from material ui
 import SettingsIcon from '@mui/icons-material/Settings';
-// import use selector and state component from redux
-import { useSelector, useState } from 'react-redux';
+// import use selector component from redux
+import { useSelector } from 'react-redux';
 // import select user component from user slice
 import { selectUser } from './features/userSlice';
 // import auth component from firebase.js
