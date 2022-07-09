@@ -14,3 +14,5 @@ const firebaseConfig = {
 
 // initialize the app using the above configurtion
 const firebaseApp = firebase.initializeApp(firebaseConfig);
+// get the database
+const db = firebase.firestor();
