@@ -50,6 +50,9 @@ function Sidebar() {
               <CallIcon />
             </div>
           </div>
+          <div className="sidebar__profile">
+            i am sidebar profile
+          </div>
         </div>
     );
 }
