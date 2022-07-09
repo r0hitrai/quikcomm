@@ -5,8 +5,10 @@ import React from 'react';
 function SidebarChannel() {
   // return HTML code
   return (
-    <div>
-
+    <div className="sidebarChannel">
+      <h4>
+        <span className="sidebarChannel_hash">#</span>Youtube
+      </h4>
     </div>
   );
 }
