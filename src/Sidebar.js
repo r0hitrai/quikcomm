@@ -17,7 +17,7 @@ function Sidebar() {
           <div className="sidebar__channels">
             <div className="sidebar__channelsHeader">
               <div className="sidebar__header">
-                i am sidebar header
+                <ExpandMoreIcon />
               </div>
             </div>
           </div>
