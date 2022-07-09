@@ -16,6 +16,12 @@ import InfoOutlindedIcon from '@mui/icons-material/InfoOutlined';
 import CallIcon from '@mui/icons-material/Call';
 // import Avatar component from material ui
 import { Avatar } from '@mui/material';
+// import mic icon from material ui
+import MicIcon from '@mui/icons-material/Mic';
+// import headset icon from material ui
+import HeadsetIcon from '@mui/icons-material/Headset';
+// import settings icon from material ui
+import SettingsIcon from '@mui/icons-material/Settings';
 
 // Sidebar function
 function Sidebar() {
@@ -57,6 +63,11 @@ function Sidebar() {
             <div className="sidebar__profileInfo">
               <h3>Username</h3>
               <p>#thisIsMyId</p>
+            </div>
+            <div className="sidebar__profileIcons">
+              <MicIcon />
+              <HeadsetIcon />
+              <SettingsIcon />
             </div>
           </div>
         </div>
