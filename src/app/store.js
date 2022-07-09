@@ -1,8 +1,11 @@
+// import store config component from redux toolit
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counterSlice';
+// import user reducer component from features folder
+import userReducer from '../features/userSlice';
 
-export const store = configureStore({
+// export configureStore for user data layer
+export default configureStore({
   reducer: {
-    counter: counterReducer,
+    user: userReducer;
   },
 });
