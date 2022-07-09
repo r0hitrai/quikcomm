@@ -14,6 +14,8 @@ import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
 import InfoOutlindedIcon from '@mui/icons-material/InfoOutlined';
 // import call icon from material ui
 import CallIcon from '@mui/icons-material/Call';
+// import Avatar component from material ui
+import { Avatar } from '@mui/material';
 
 // Sidebar function
 function Sidebar() {
@@ -51,7 +53,7 @@ function Sidebar() {
             </div>
           </div>
           <div className="sidebar__profile">
-            i am sidebar profile
+            <Avatar />
           </div>
         </div>
     );
