@@ -7,8 +7,8 @@ import './Chat.css';
 function Chat() {
   // return HTML code
   return (
-    <div>
-
+    <div className="chat">
+      <h3>i am the chat screen</h3>
     </div>
   );
 }
