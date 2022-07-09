@@ -24,6 +24,9 @@ function ChatHeader() {
         <NotificationsIcon />
         <EditLocationRoundedIcon />
         <PeopleAltRoundedIcon />
+        <div className="chatHeader__search">
+          <input placeholder="search" />
+        </div>
       </div>
     </div>
   );
