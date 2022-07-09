@@ -6,6 +6,7 @@ import './App.css';
 import Sidebar from './Sidebar';
 
 function App() {
+  // return HTML code
   return (
     <div className="app">
       {/* Sidebar */}

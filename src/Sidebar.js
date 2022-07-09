@@ -6,10 +6,12 @@ import './Sidebar.css';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 // import add icon from material ui
 import AddIcon from '@mui/icons-material/Add';
+// import SidebarChannel component from SidebarChannel.js
+import SidebarChannel from './SidebarChannel';
 
 // Sidebar function
 function Sidebar() {
-    // return value
+    // return HTML code
     return (
         <div className="sidebar">
           <div className="sidebar__top">
@@ -24,10 +26,13 @@ function Sidebar() {
               </div>
               <AddIcon className="sidebar__addChannel" />
             </div>
+            <div className="sidebar__channelsList">
+              <SidebarChannel />
+            </div>
           </div>
         </div>
     );
 }
 
 // export Sidebar function
-export default Sidebar
+export default Sidebar;
