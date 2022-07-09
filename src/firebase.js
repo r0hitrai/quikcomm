@@ -1,5 +1,5 @@
 // import app initializer component from firebase app
-import { initializeApp } from 'frebase/app';
+import { initializeApp } from 'firebase/app';
 // import firestore database component from firebase firestore
 import { getFirestore } from 'firebase/firestore';
 // import auth, sign in with popup and google auth provider from firebase auth
