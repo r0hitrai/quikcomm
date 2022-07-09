@@ -4,12 +4,15 @@ import React from 'react';
 import './Login.css';
 // import Button component from material ui
 import { Button } from '@mui/material';
+// import auth sign in with popup and provider function from firebase.js
+import { auth, signInWithPopup, provider } from './firebase';
 
 // Login function
 function Login() {
   // sign in function
   const signIn = () => {
-    // google login
+    // open google sign-in in new window
+    signInWithPopup(auth, provider).catch((error) => alert(error.message));
   };
   // return HTML code
   return (
