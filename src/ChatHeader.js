@@ -4,6 +4,8 @@ import React from 'react';
 import './ChatHeader.css';
 // import notifications icon from material ui
 import NotificationsIcon from '@mui/icons-material/Notifications';
+// import location icom from material ui
+import EditLocationRoundedIcon from '@mui/icons-material/EditLocationRounded';
 
 // ChatHeader function
 function ChatHeader() {
@@ -18,6 +20,7 @@ function ChatHeader() {
       </div>
       <div className="chatHeader__right">
         <NotificationsIcon />
+        <EditLocationRoundedIcon />
       </div>
     </div>
   );
