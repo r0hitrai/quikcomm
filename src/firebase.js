@@ -18,3 +18,5 @@ const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestor();
 // get the authentication object
 const auth = firebaseApp.auth();
+// get the Google Authentication service provider
+const provider = auth.GoogleAuthProvider();
