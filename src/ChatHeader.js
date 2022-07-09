@@ -6,6 +6,8 @@ import './ChatHeader.css';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 // import location icom from material ui
 import EditLocationRoundedIcon from '@mui/icons-material/EditLocationRounded';
+// import people icon from material ui
+import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
 
 // ChatHeader function
 function ChatHeader() {
@@ -21,6 +23,7 @@ function ChatHeader() {
       <div className="chatHeader__right">
         <NotificationsIcon />
         <EditLocationRoundedIcon />
+        <PeopleAltRoundedIcon />
       </div>
     </div>
   );
