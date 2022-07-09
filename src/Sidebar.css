@@ -51,3 +51,8 @@
   padding: 10px;
   border-top: 1px solid gray;
 }
+
+.sidebar__voiceInfo {
+  flex: 1;
+  padding: 10px;
+}
