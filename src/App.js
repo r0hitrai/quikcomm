@@ -35,12 +35,12 @@ function App() {
             email: authUser.email,
             displayName: authUser.displayName,
           })
-        )
+        );
       } else {
         // the user is logged out
         dispatch(logout());
       }
-    })
+    });
   }, [dispatch]);
   // return HTML code
   return (
