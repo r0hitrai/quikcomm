@@ -12,6 +12,9 @@ function Chat() {
     <div className="chat">
       <ChatHeader />
       <div className="chat__messages">
+
+      </div>
+      <div className="chat__input">
         
       </div>
     </div>
