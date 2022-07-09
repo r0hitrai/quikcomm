@@ -11,3 +11,8 @@
   color: white;
   font-weight: 800;
 }
+
+.login > button:hover {
+  background-color: black;
+  color: #738adb;
+}
