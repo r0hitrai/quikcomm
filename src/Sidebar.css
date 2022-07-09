@@ -69,7 +69,7 @@
   font-size: smaller;
 }
 
-.sidebar__voiceIcons > .MuiSvgIcon-root {
+.sidebar__voiceIcons > .MuiSvgIcon-root, .sidebar__profileIcons > .MuiSvgIcon-root {
   padding: 10px;
 }
 
