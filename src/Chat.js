@@ -23,7 +23,7 @@ import { selectUser } from './features/userSlice';
 // import db, collection, onSnapshot, addDoc component form firebase.js
 import db, { collection, onSnapshot, addDoc } from './firebase';
 // import server timestamp, doc, orderBy, query component from firestore
-import { serverTimestamp, doc, orderBy, query } from 'firebase/firestore';
+import { serverTimestamp, orderBy, query } from 'firebase/firestore';
 
 // Chat function
 function Chat() {
