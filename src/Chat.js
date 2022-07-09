@@ -12,6 +12,8 @@ import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import GifIcon from '@mui/icons-material/Gif';
 // import emoji icon from material ui
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
+// import Message component from Message.js
+import Message from './Message.js';
 
 // Chat function
 function Chat() {
@@ -20,7 +22,7 @@ function Chat() {
     <div className="chat">
       <ChatHeader />
       <div className="chat__messages">
-
+        <Message />
       </div>
       <div className="chat__input">
         <AddCircleIcon fontSize="large" />
