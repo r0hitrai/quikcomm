@@ -65,7 +65,7 @@ function Sidebar() {
         </div>
       </div>
       <div className="sidebar__profile">
-        <Avatar src={user.photo}/>
+        <Avatar src={user.photo} alt="profile"/>
         <div className="sidebar__profileInfo">
           <h3>{user.displayName}</h3>
           <p>#{user.uid.substring(0, 5)}</p>
