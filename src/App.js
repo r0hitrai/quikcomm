@@ -9,9 +9,11 @@ import Chat from './Chat';
 // import use selector component from redux
 import { useSelector } from 'react-redux';
 // import select user selector from user slice
-import { selecUser } from './features/userSlice';
+import { selectUser } from './features/userSlice';
 
 function App() {
+  // logged in user
+  const user = useSelector(selectUser);
   // return HTML code
   return (
     <div className="app">
