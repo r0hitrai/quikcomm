@@ -6,10 +6,12 @@ import './Sidebar.css';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 // import add icon from material ui
 import AddIcon from '@mui/icons-material/Add';
+// import SidebarChannel component from SidebarChannel.js
+import SidebarChannel from './SidebarChannel';
 
 // Sidebar function
 function Sidebar() {
-    // return value
+    // return HTML code
     return (
         <div className="sidebar">
           <div className="sidebar__top">
@@ -26,7 +28,7 @@ function Sidebar() {
             </div>
           </div>
           <div className="sidebar__channelsList">
-            i am sidebar channels list
+            <SidebarChannel />
           </div>
         </div>
     );
