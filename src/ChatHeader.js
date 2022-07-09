@@ -8,7 +8,11 @@ function ChatHeader() {
   // return HTML code
   return (
     <div className="chatHeader">
-      
+      <div className="chatHeader__left">
+        <h3>
+          <span className="chatHeader__hash">#</span>
+        </h3>
+      </div>
     </div>
   );
 }
