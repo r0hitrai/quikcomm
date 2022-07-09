@@ -24,11 +24,11 @@ function App() {
   useEffect(() => {
     // on use of authentication
     auth.onAuthStateChanged((authUser) => {
-      console.log("user is ", authUser);
       // check for user
       if (authUser) {
         // the user is logged in
         dispatch(
+          // state variables
           login({
             uid: authUser.uid,
             photo: authUser.photoURL,
