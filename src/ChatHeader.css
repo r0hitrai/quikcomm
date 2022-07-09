@@ -29,3 +29,7 @@
   padding: 5px;
   cursor: pointer;
 }
+
+.chatHeader__right > .MuiSvgIcon-root:hover {
+  color: white;
+}
