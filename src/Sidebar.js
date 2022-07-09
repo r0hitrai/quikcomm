@@ -10,6 +10,10 @@ import AddIcon from '@mui/icons-material/Add';
 import SidebarChannel from './SidebarChannel';
 // import voice signal icon from material ui
 import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
+// import info icon from material ui
+import InfoOutlindedIcon from '@mui/icons-material/InfoOutlined';
+// import call icon from material ui
+import CallIcon from '@mui/icons-material/Call';
 
 // Sidebar function
 function Sidebar() {
@@ -37,6 +41,10 @@ function Sidebar() {
             <div className="sidebar__voiceInfo">
               <h3>Voice Connected</h3>
               <p>Stream</p>
+            </div>
+            <div className="sidebar__voiceIcons">
+              <InfoOutlindedIcon />
+              <CallIcon />
             </div>
           </div>
         </div>
