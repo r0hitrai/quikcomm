@@ -31,8 +31,8 @@ function ChatHeader() {
         <div className="chatHeader__search">
           <input placeholder="search" />
           <SearchRoundedIcon />
-          <HelpRoundedIcon />
         </div>
+        <HelpRoundedIcon />
       </div>
     </div>
   );
