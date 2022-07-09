@@ -15,15 +15,15 @@ import HelpRoundedIcon from '@mui/icons-material/HelpRounded';
 // import send icon from material ui
 import SendRoundedIcon from '@mui/icons-material/SendRounded';
 
-// ChatHeader function
-function ChatHeader() {
+// ChatHeader function, parameters: channel name
+function ChatHeader({ channelName }) {
   // return HTML code
   return (
     <div className="chatHeader">
       <div className="chatHeader__left">
         <h3>
           <span className="chatHeader__hash">#</span>
-          Test Channel Name
+          {channelName}
         </h3>
       </div>
       <div className="chatHeader__right">
