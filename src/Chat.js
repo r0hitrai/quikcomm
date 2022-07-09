@@ -2,6 +2,8 @@
 import React from 'react';
 // import Chat.css from current folder
 import './Chat.css';
+// import ChatHeader component from Chatheader.js
+import ChatHeader from './ChatHeader';
 
 // Chat function
 function Chat() {
