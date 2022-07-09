@@ -35,6 +35,15 @@ function Sidebar() {
   const user = useSelector(selectUser);
   // channels variables
   const [channels, setChannels] = useState([]);
+  // runs on first render
+  useEffect(() => {
+    onSnapshot(collection(db, "channels"), (snapshot) => setChannels(
+      snapshot.docs.map((doc) => ({
+        id: doc.id,
+        channel: doc.data(),
+      }))
+    ))
+  }, []);
   // add channel
   const handleAddChannel = () => {
     const channelName = prompt("Enter a new channel name");
