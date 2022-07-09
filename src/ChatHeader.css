@@ -5,3 +5,9 @@
   color: grays;
   padding: 10px;
 }
+
+.chatHeader__hash {
+  color: gray;
+  font-size: 30px;
+  padding: 10px;
+}
