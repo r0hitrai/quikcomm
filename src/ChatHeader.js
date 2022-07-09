@@ -2,6 +2,8 @@
 import React from 'react';
 // import ChatHeader.css from current folder
 import './ChatHeader.css';
+// import notifications icon from material ui
+import NotificationsIcon from '@mui/icons-material/Notifications';
 
 // ChatHeader function
 function ChatHeader() {
@@ -13,6 +15,9 @@ function ChatHeader() {
           <span className="chatHeader__hash">#</span>
           Test Channel Name
         </h3>
+      </div>
+      <div className="chatHeader__right">
+        <NotificationsIcon />
       </div>
     </div>
   );
