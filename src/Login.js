@@ -10,7 +10,7 @@ function Login() {
   // sign in function
   const signIn = () => {
     // google login
-  }
+  };
   // return HTML code
   return (
     <div className="login">
