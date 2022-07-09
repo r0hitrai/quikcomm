@@ -30,6 +30,9 @@ function Sidebar() {
               <SidebarChannel />
             </div>
           </div>
+          <div className="sidebar__voice">
+            
+          </div>
         </div>
     );
 }
