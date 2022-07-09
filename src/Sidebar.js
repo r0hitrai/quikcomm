@@ -8,6 +8,8 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AddIcon from '@mui/icons-material/Add';
 // import SidebarChannel component from SidebarChannel.js
 import SidebarChannel from './SidebarChannel';
+// import voice signal icon from material ui
+import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
 
 // Sidebar function
 function Sidebar() {
@@ -31,7 +33,7 @@ function Sidebar() {
             </div>
           </div>
           <div className="sidebar__voice">
-            
+            <SignalCellularAltIcon className="sidebar__voiceIcon" fontSize="large" />
           </div>
         </div>
     );
