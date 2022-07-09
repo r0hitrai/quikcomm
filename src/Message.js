@@ -5,17 +5,18 @@ import './Message.css';
 // import Avatar component from material ui
 import { Avatar } from '@mui/material';
 
-// Message function
-function Message() {
+// Message function, parameters: timestamp, user ,message
+function Message({ timestamp, user, message }) {
   // return HTML code
   return (
     <div className="message">
-      <Avatar />
+      <Avatar src={user.photo} alt="Profile" />
       <div className="message__info">
         <h4>
-          Username
-          <span className="message__timestamp">this is a timestamp</span>
+          {user.displayName}
+          <span className="message__timestamp">{new Date(timestamp?.toDate()).toUTCString()}</span>
         </h4>
+        <p>{message}</p>
       </div>
     </div>
   );
