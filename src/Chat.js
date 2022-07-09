@@ -11,6 +11,9 @@ function Chat() {
   return (
     <div className="chat">
       <ChatHeader />
+      <div className="chat__messages">
+        
+      </div>
     </div>
   );
 }
