@@ -52,7 +52,7 @@
   border-top: 1px solid gray;
 }
 
-.sidebar__voiceInfo {
+.sidebar__voiceInfo, .sidebar__profileInfo {
   flex: 1;
   padding: 10px;
 }
