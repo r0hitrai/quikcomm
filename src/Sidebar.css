@@ -42,7 +42,7 @@
   align-items: center;
 }
 
-.sidebar__voice {
+.sidebar__voice, .sidebar__profile {
   display: flex;
   justify-content: space-between;
   align-items: center;
