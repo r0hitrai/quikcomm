@@ -8,6 +8,10 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import EditLocationRoundedIcon from '@mui/icons-material/EditLocationRounded';
 // import people icon from material ui
 import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
+// import search icon from material ui
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+// import help icon from material ui
+import HelpRoundedIcon from '@mui/icons-material/HelpRounded';
 
 // ChatHeader function
 function ChatHeader() {
@@ -26,6 +30,8 @@ function ChatHeader() {
         <PeopleAltRoundedIcon />
         <div className="chatHeader__search">
           <input placeholder="search" />
+          <SearchRoundedIcon />
+          <HelpRoundedIcon />
         </div>
       </div>
     </div>
