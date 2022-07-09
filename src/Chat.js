@@ -18,6 +18,10 @@ function Chat() {
       </div>
       <div className="chat__input">
         <AddCircleIcon fontSize="large" />
+        <form>
+          <input placeholder={'Message #TESTCHANNEL'} />
+          <button className="chat__inputButton" type="submit">Send Message</button>
+        </form>
       </div>
     </div>
   );
