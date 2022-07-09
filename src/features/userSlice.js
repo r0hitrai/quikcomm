@@ -1,17 +1,17 @@
 // import create slice component from redux toolkit
 import { createSlice } from '@reduxjs/toolkit';
 
-// export userSlice component
+// export user slice component
 export const userSlice = createSlice({
-  // name used in action types
+  // slice name
   nam: "user",
-  // initial state for the reducer
+  // initial state for reducer
   initialState: {
     // user variable to null
     user: null,
   },
   // reducer object containing functions
-  reducer: {
+  reducers: {
     // login function
     login: (state, action) => {
       state.user += action.payload;
@@ -25,7 +25,7 @@ export const userSlice = createSlice({
 
 //export login and logout actions
 export const { login, logout } = userSlice.actions;
-// export user selection
+// export user selecter
 export const selectUser = (state) => state.user.user;
-// export userSlice reducer
+// export user slice reducer
 export default userSlice.reducer;
