@@ -60,3 +60,7 @@
 .sidebar__voiceIcon {
   color: #4fb185;
 }
+
+.sidebar__voiceInfo > h3 {
+  color: #4fb185;
+}
