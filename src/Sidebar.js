@@ -22,8 +22,8 @@ import MicIcon from '@mui/icons-material/Mic';
 import HeadsetIcon from '@mui/icons-material/Headset';
 // import settings icon from material ui
 import SettingsIcon from '@mui/icons-material/Settings';
-// import use selector component from redux
-import { useSelector } from 'react-redux';
+// import use selector and state component from redux
+import { useSelector, useState } from 'react-redux';
 // import select user component from user slice
 import { selectUser } from './features/userSlice';
 // import auth component from firebase.js
@@ -33,6 +33,8 @@ import { auth } from './firebase';
 function Sidebar() {
   // user variable
   const user = useSelector(selectUser);
+  // channels variables
+  const [channels, setChannels] = useState([]);
   // return HTML code
   return (
     <div className="sidebar">
