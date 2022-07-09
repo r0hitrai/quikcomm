@@ -16,7 +16,9 @@ function Sidebar() {
           </div>
           <div className="sidebar__channels">
             <div className="sidebar__channelsHeader">
-              i am sidebar channels header
+              <div className="sidebar__header">
+                i am sidebar header
+              </div>
             </div>
           </div>
         </div>
