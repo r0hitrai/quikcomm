@@ -14,6 +14,9 @@ function Sidebar() {
             <h3>Sidebar Top</h3>
             <ExpandMoreIcon />
           </div>
+          <div className="sidebar__channels">
+            i am sidebar channels
+          </div>
         </div>
     )
 }
