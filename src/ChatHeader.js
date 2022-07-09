@@ -1,5 +1,7 @@
 // import React component from ract library
 import React from 'react';
+// import ChatHeader.css from current folder
+import './ChatHeader.css';
 
 // ChatHeader function
 function ChatHeader() {
