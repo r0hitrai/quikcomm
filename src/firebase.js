@@ -1,7 +1,7 @@
 // import app initializer component from firebase app
 import { initializeApp } from 'firebase/app';
-// import firestore database component from firebase firestore
-import { getFirestore } from 'firebase/firestore';
+// import firestore database, collection, onSnapshot, addDoc component from firebase firestore
+import { getFirestore, collection, onSnapshot, addDoc } from 'firebase/firestore';
 // import auth, sign in with popup and google auth provider from firebase auth
 import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
 
@@ -25,7 +25,7 @@ const auth = getAuth();
 // get the Google Authentication service provider
 const provider = new GoogleAuthProvider();
 
-//e export auth, sign in with popup and provider component explicitly
-export { auth, signInWithPopup, provider };
+//e export auth, sign in with popup, provider, collection, on snapshot, addDoc component explicitly
+export { auth, signInWithPopup, provider, collection, onSnapshot, addDoc };
 // export db component by default
 export default db;
