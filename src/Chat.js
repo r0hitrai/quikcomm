@@ -1,5 +1,5 @@
-// import React component from react library
-import React from 'react';
+// import React, useState component from react library
+import React, { useState } from 'react';
 // import Chat.css from current folder
 import './Chat.css';
 // import ChatHeader component from Chatheader.js
@@ -27,6 +27,8 @@ function Chat() {
   const user = useSelector(selectUser);
   const channelId = useSelector(selectChannelId);
   const channelName = useSelector(selectChannelName);
+  // message string
+  const [input, setInput] = useState("");
   // return HTML code
   return (
     <div className="chat">
@@ -39,7 +41,7 @@ function Chat() {
       <div className="chat__input">
         <AddCircleIcon fontSize="large" />
         <form>
-          <input placeholder={'Message #TESTCHANNEL'} />
+          <input disabled={!channelId} value={input} onChange={e => setInput(e.target.value)} placeholder={`Message #${channelName}`} />
           <button className="chat__inputButton" type="submit">Send Message</button>
         </form>
         <div className="chat__inputIcons">
