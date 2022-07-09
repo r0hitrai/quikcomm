@@ -1,8 +1,8 @@
 // import React component from react library
 import React from 'react';
 
-// SidebarChannel function
-function SidebarChannel() {
+// SidebarChannel function, parameters: user id, channel name
+function SidebarChannel({ id, channel }) {
   // return HTML code
   return (
     <div className="sidebarChannel">
