@@ -6,9 +6,9 @@ import './App.css';
 import Sidebar from './Sidebar';
 // import Chat function from Chat.js
 import Chat from './Chat';
-// import use selector component from redux
+// import use selector and dispatch component from redux
 import { useSelector, useDispatch } from 'react-redux';
-// import select user selector from user slice
+// import select user, login and logout component from user slice
 import { selectUser, login, logout } from './features/userSlice';
 // import Login componen from Login.js
 import Login from './Login';
