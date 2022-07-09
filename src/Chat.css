@@ -30,3 +30,7 @@
 .chat__input > form {
   flex: 1;
 }
+
+.chat__inputButton {
+  display: none;
+}
