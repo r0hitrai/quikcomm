@@ -25,6 +25,9 @@ function Sidebar() {
               <AddIcon className="sidebar__addChannel" />
             </div>
           </div>
+          <div className="sidebar__channelsList">
+            i am sidebar channels list
+          </div>
         </div>
     );
 }
