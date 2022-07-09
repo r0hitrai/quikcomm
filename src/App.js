@@ -17,11 +17,18 @@ function App() {
   // return HTML code
   return (
     <div className="app">
-      <Sidebar />
-      {/* Chat */}
-      <Chat />
+      {// if user logged in, load application. else, till user to log in
+        user ? (
+          <>
+            <Sidebar />
+            <Chat />
+          </>
+        ) : (
+          <h2>You need to login.</h2>
+        )
+      }
     </div>
   );
-}
+};
 
 export default App;
