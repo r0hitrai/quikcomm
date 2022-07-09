@@ -10,7 +10,6 @@ function Sidebar() {
     // return value
     return (
         <div className="sidebar">
-          <h2>i am the sidebar</h2>
           <div className="sidebar__top">
             <h3>Sidebar Top</h3>
             <ExpandMoreIcon />
