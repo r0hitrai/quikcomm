@@ -8,7 +8,9 @@ function Login() {
   // return HTML code
   return (
     <div className="login">
-      <h2>i am the login page.</h2>
+      <div className="login__logo">
+        <img src="https://raw.githubusercontent.com/r0hitrai/Images/main/small_logo_blurple_RGB.png" alt="QuikComm" />
+      </div>
     </div>
   );
 }
