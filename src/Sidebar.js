@@ -15,7 +15,9 @@ function Sidebar() {
             <ExpandMoreIcon />
           </div>
           <div className="sidebar__channels">
-            i am sidebar channels
+            <div className="sidebar__channelsHeader">
+              i am sidebar channels header
+            </div>
           </div>
         </div>
     )
