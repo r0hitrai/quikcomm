@@ -1,5 +1,5 @@
-// import React, useState component from react library
-import React, { useState } from 'react';
+// import React, useState, useEffect component from react library
+import React, { useState, useEffect } from 'react';
 // import Chat.css from current folder
 import './Chat.css';
 // import ChatHeader component from Chatheader.js
@@ -20,6 +20,10 @@ import { useSelector } from 'react-redux';
 import { selectChannelId, selectChannelName } from './features/appSlice';
 // import select user component from user slice
 import { selectUser } from './features/userSlice';
+// import db, collection, onSnapshot, addDoc component form firebase.js
+import db, { collection, onSnapshot, addDoc } from './firebase';
+// import server timestamp, doc component from firestore
+import { serverTimestamp, doc } from 'firebase/firestore';
 
 // Chat function
 function Chat() {
@@ -31,6 +35,18 @@ function Chat() {
   const [input, setInput] = useState("");
   // messages array
   const [messages, setMessages] = useState([]);
+  // sending message
+  const sendMessage = (e) => {
+    // prevent reload
+    e.preventDefault();
+    addDoc(collection(db, "channels", channelId, "messages"), {
+      timestamp: serverTimestamp(),
+      message: input,
+      user: user,
+    });
+    // set input to empty
+    setInput("");
+  };
   // return HTML code
   return (
     <div className="chat">
@@ -44,7 +60,7 @@ function Chat() {
         <AddCircleIcon fontSize="large" />
         <form>
           <input disabled={!channelId} value={input} onChange={e => setInput(e.target.value)} placeholder={`Message #${channelName}`} />
-          <button className="chat__inputButton" type="submit">Send Message</button>
+          <button disabled={!channelId} className="chat__inputButton" type="submit" onClick={sendMessage}>Send Message</button>
         </form>
         <div className="chat__inputIcons">
           <CardGiftcardIcon fontSize="large" />
