@@ -19,11 +19,11 @@ const firebaseConfig = {
 // initialize the app using the above configurtion
 const firebaseApp = initializeApp(firebaseConfig);
 // get the database object
-const db = getFirestore();
+const db = getFirestore(firebaseApp);
 // get the authentication object
 const auth = getAuth();
 // get the Google Authentication service provider
-const provider = GoogleAuthProvider();
+const provider = new GoogleAuthProvider();
 
 //e export auth, sign in with popup and provider component explicitly
 export { auth, signInWithPopup, provider };
