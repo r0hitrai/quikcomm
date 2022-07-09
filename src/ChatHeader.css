@@ -1,0 +1,7 @@
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: grays;
+  padding: 10px;
+}
