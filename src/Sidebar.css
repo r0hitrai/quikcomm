@@ -23,3 +23,7 @@
 .sidebar__addChannel {
   cursor: pointer;
 }
+
+.sidebar__addChannel:hover {
+  color: white;
+}
