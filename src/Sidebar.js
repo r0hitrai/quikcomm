@@ -18,6 +18,7 @@ function Sidebar() {
             <div className="sidebar__channelsHeader">
               <div className="sidebar__header">
                 <ExpandMoreIcon />
+                <h4>Text Channels</h4>
               </div>
             </div>
           </div>
