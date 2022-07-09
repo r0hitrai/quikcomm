@@ -1,5 +1,7 @@
 // import React component from react library
 import React from 'react'
+// import Sidebar.css from current folder
+import "./Sidebar.css"
 
 // Sidebar function
 function Sidebar() {
