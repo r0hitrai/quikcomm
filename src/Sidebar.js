@@ -35,4 +35,4 @@ function Sidebar() {
 }
 
 // export Sidebar function
-export default Sidebar
+export default Sidebar;
