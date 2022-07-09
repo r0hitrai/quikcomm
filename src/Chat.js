@@ -29,14 +29,16 @@ function Chat() {
   const channelName = useSelector(selectChannelName);
   // message string
   const [input, setInput] = useState("");
+  // messages array
+  const [messages, setMessages] = useState([]);
   // return HTML code
   return (
     <div className="chat">
       <ChatHeader channelName={channelName}/>
       <div className="chat__messages">
-        <Message />
-        <Message />
-        <Message />
+        {messages.map((message) => (
+          <Message />
+        ))}
       </div>
       <div className="chat__input">
         <AddCircleIcon fontSize="large" />
