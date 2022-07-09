@@ -4,6 +4,8 @@ import React from 'react';
 import './Chat.css';
 // import ChatHeader component from Chatheader.js
 import ChatHeader from './ChatHeader';
+// import add circle icon from material ui
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 
 // Chat function
 function Chat() {
@@ -15,7 +17,7 @@ function Chat() {
 
       </div>
       <div className="chat__input">
-        
+        <AddCircleIcon fontSize="large" />
       </div>
     </div>
   );
