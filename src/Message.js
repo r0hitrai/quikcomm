@@ -1,5 +1,5 @@
 // import React component from react library
-import React from 'ract';
+import React from 'react';
 // import Message.css from current folder
 import './Message.css';
 
