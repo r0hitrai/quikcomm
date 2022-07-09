@@ -23,6 +23,8 @@ function Chat() {
       <ChatHeader />
       <div className="chat__messages">
         <Message />
+        <Message />
+        <Message />
       </div>
       <div className="chat__input">
         <AddCircleIcon fontSize="large" />
