@@ -4,12 +4,12 @@ import React from 'react';
 import './SidebarChannel.css';
 
 // SidebarChannel function, parameters: user id, channel name
-function SidebarChannel({ id, channel }) {
+function SidebarChannel({ id, channelName }) {
   // return HTML code
   return (
     <div className="sidebarChannel">
       <h4>
-        <span className="sidebarChannel__hash">#</span>Youtube
+        <span className="sidebarChannel__hash">#</span>{channelName}
       </h4>
     </div>
   );
