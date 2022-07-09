@@ -4,6 +4,8 @@ import React from 'react';
 import './Sidebar.css';
 // import expand more icon from material ui
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+// import add icon from material ui
+import AddIcon from '@mui/icons-material/Add';
 
 // Sidebar function
 function Sidebar() {
@@ -20,10 +22,11 @@ function Sidebar() {
                 <ExpandMoreIcon />
                 <h4>Text Channels</h4>
               </div>
+              <AddIcon classNmae="sidebar__addChannel" />
             </div>
           </div>
         </div>
-    )
+    );
 }
 
 // export Sidebar function
