@@ -22,7 +22,7 @@ function Sidebar() {
                 <ExpandMoreIcon />
                 <h4>Text Channels</h4>
               </div>
-              <AddIcon classNmae="sidebar__addChannel" />
+              <AddIcon className="sidebar__addChannel" />
             </div>
           </div>
         </div>
