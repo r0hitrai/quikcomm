@@ -10,6 +10,8 @@ import Chat from './Chat';
 import { useSelector } from 'react-redux';
 // import select user selector from user slice
 import { selectUser } from './features/userSlice';
+// import Login componen from Login.js
+import Login from './Login';
 
 function App() {
   // logged in user
@@ -24,7 +26,7 @@ function App() {
             <Chat />
           </>
         ) : (
-          <h2>You need to login.</h2>
+          <Login />
         )
       }
     </div>
