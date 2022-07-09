@@ -22,8 +22,8 @@ import { selectChannelId, selectChannelName } from './features/appSlice';
 import { selectUser } from './features/userSlice';
 // import db, collection, onSnapshot, addDoc component form firebase.js
 import db, { collection, onSnapshot, addDoc } from './firebase';
-// import server timestamp, doc component from firestore
-import { serverTimestamp, doc } from 'firebase/firestore';
+// import server timestamp, doc, orderBy, query component from firestore
+import { serverTimestamp, doc, orderBy, query } from 'firebase/firestore';
 
 // Chat function
 function Chat() {
@@ -35,6 +35,12 @@ function Chat() {
   const [input, setInput] = useState("");
   // messages array
   const [messages, setMessages] = useState([]);
+  // runs for channel id
+  useEffect(() => {
+    if(channelId) {
+      onSnapshot(query(collection(db, "channels", channelId, "messages"), orderBy("timestamp", "desc")), (snapshot) => setMessages(snapshot.docs.map((doc) => doc.data())));
+    }
+  }, [channelId]);
   // sending message
   const sendMessage = (e) => {
     // prevent reload
