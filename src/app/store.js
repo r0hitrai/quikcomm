@@ -6,6 +6,6 @@ import userReducer from '../features/userSlice';
 // export configureStore for user data layer
 export default configureStore({
   reducer: {
-    user: userReducer;
+    user: userReducer,
   },
 });
